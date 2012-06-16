@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTTP Request Tester</title>
+    <script type="text/javascript" src="main.js"></script>
+    <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1>HTTP Request Tester</h1>
+    <div id="request">
+        <div id="methodPanel">
+          <a>Method: </a>
+          <input type="radio" class="method" name="method" id="get" checked="yes">GET</input>
+          <input type="radio" class="method" name="method" id="post"/>POST</input>
+        </div>
+        <div class="panel url">
+          <a>URL:</a>
+          <textarea id="url"></textarea>
+        </div>
+        <div class="panel content">
+          <a>Request Header:</a>
+          <textarea id="request_header"></textarea>
+        </div>
+        <div class="panel content">
+          <a>Request POST Body:</a>
+          <textarea id="body"/></textarea>
+        </div>
+        <button id="send" class="panel" onclick="makeRequest();">Send Request</button>
+    </div>
+    <div id="response">
+        <div class="panel content">
+          <a>Response Header:</a>
+          <textarea id="response_header"></textarea>
+        </div>
+        <div class="panel content">
+          <a>Response Data:</a>
+          <textarea id="response_data"></textarea>
+        </div>
+    </div>
+</body>
+</html>
